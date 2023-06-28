@@ -7,6 +7,7 @@ import os
 
 from setuptools import find_packages, setup
 
+os.system("make hip")
 libs = list(glob.glob("./bitsandbytes/libbitsandbytes*.so"))
 libs = [os.path.basename(p) for p in libs]
 print("libs:", libs)
